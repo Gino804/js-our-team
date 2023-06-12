@@ -35,15 +35,19 @@ const members = [
 
 console.table(members);
 
-const list = document.getElementById('list');
+const row = document.querySelector('.row');
 let text = '';
 
 for(i = 0; i < members.length; i++)
 {
     text += `
-    <li>Nome: ${members[i].name}<br>
-    Ruolo: ${members[i].role}<br>
-    Immagine: ${members[i].image}</li><br>`
+    <div class="col">
+    <div class="card">
+    <img src='img/${members[i].image}'>
+    <h4>${members[i].name}</h4>
+    <p>Ruolo: ${members[i].role}</p>
+    </div>
+    </div>`;
 }
 
-list.innerHTML = text;
+row.innerHTML = text;

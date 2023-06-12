@@ -30,4 +30,4 @@ Organizzare i singoli membri in card/schede ispirandovi alle immagini in allegat
 - Creo un array di oggetti per i membri del team
 - Recupero l'elemento dal DOM
 - **PER OGNI** elemento nell'array
-  - Stampo in pagina il nome, il ruolo e l'url dell'immagine dell'elemento corrente
+  - Stampo in pagina una card che contiene tutte le informazioni dell'elemento corrente
